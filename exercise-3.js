@@ -2,9 +2,10 @@ function createStore() {
   let store = [];
   return function addStore(product) {
     for (const key in product) {
-      if (Object.entries(key)) {
-        console.log(product.name);
+      if (Object.values(key)) {
+        store.push(product.name);
       }
+      console.log(store);
       return store;
     }
   };
